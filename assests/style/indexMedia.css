@@ -1,0 +1,31 @@
+@media (max-width: 1200px) {
+  .connect-with-others-section {
+    width: 100% !important;
+  }
+  .browse-by-property-section,
+  .get-inspiration-section,
+  .destinations-we-love-section,
+  .subscribe-section,
+  .desktop-nav,
+  .bottom-footer-section {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
+@media (max-width: 426px) {
+  .connect-with-others-slide-content-details-heading {
+    font-size: 10px !important;
+  }
+  .connect-with-others-slide-content-details-type,
+  .connect-with-others-slide-content-details-type-number {
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .connect-with-others-section-title {
+    font-size: 18px !important;
+  }
+}

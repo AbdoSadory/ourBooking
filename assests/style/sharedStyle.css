@@ -1,0 +1,26 @@
+:root {
+  --darker-blue-color: #00224f;
+  --dark-blue-color: #003580;
+  --light-blue-color: rgb(0, 113, 194);
+  --white-color: #fff;
+  --grey-color: rgb(107, 107, 107);
+  --callout-background-color: #fff0e0;
+  --callout-color: #923e01;
+  --hover-color: #bc5b01;
+  --yellow-color: #febb02;
+  --red-color: #c00;
+  --green-color: #008009;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.25s all ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.red-fill-svg {
+  fill: var(--red-color) !important;
+}

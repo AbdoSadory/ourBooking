@@ -1,0 +1,208 @@
+.hotel-imgs {
+  display: block;
+}
+.details-bar-item {
+  background-color: rgba(0, 113, 194, 0.3);
+}
+.details-bar-item-anchor {
+  color: var(--dark-blue-color);
+  font-size: 14px;
+}
+.details-bar-item-anchor:hover {
+  color: black;
+}
+.rating-star {
+  fill: var(--yellow-color);
+}
+.wishlist-icon-span:hover,
+.share-icon-span:hover {
+  background-color: rgba(0, 113, 194, 0.3);
+}
+.wishlist-icon-span svg {
+  fill: none;
+  stroke: var(--light-blue-color);
+  stroke-width: 10px;
+}
+.share-icon-span i {
+  color: var(--light-blue-color);
+  font-size: 20px;
+}
+.reserve-your-apartment {
+  background-color: var(--light-blue-color);
+  color: white;
+}
+.reserve-your-apartment:hover {
+  background-color: var(--dark-blue-color);
+  color: white;
+}
+.hotel-address-icon-span {
+  color: var(--light-blue-color);
+}
+.hotel-address-icon-span:hover {
+  color: var(--dark-blue-color);
+}
+#hotel-main-imgs-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 5px;
+}
+#hotel-main-imgs-left {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 5px;
+}
+.hotel-main-imgs-left div {
+  max-height: 275px;
+  height: 275px;
+  overflow: hidden;
+}
+.hotel-main-imgs-right {
+  text-align: center;
+  height: 555px;
+  overflow: hidden;
+}
+#img-1,
+#img-2,
+#img-3 {
+  object-fit: cover !important;
+  height: -webkit-fill-available;
+}
+.more-img {
+  height: 115px;
+  overflow: hidden;
+}
+.more-img img {
+  height: -webkit-fill-available;
+  object-fit: cover;
+  width: 100%;
+}
+.hotel-imgs-mob .swiper-slide {
+  height: 615px;
+  overflow: hidden;
+}
+.hotel-imgs-mob .swiper-slide img {
+  object-fit: contain !important;
+  height: -webkit-fill-available;
+}
+#hotel-more-imgs-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 5px;
+}
+.more-img:last-child {
+  filter: grayscale(100%);
+  position: relative;
+}
+#imgs-number {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.hotel-imgs-mob {
+  display: none;
+}
+.hotel-imgs-mob .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hotel-imgs-mob .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.hotel-imgs-mob .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hotel-imgs-mob .swiper-button-next::after,
+.hotel-imgs-mob .swiper-button-prev::after {
+  content: "";
+}
+.swiper-gallery-arrow {
+  font-size: 30px;
+  color: black;
+  padding: 5px;
+  background: white;
+}
+.hotel-search-details-section,
+.hotel-reviews-section {
+  width: 75%;
+}
+.options-1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 5px;
+}
+.options-2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 5px;
+}
+.option {
+  border: 1px solid var(--grey-color);
+  font-size: 15px;
+  text-align: center;
+}
+.option svg {
+  fill: black;
+  margin-right: 5px;
+}
+.hotel-desc-highlights-details,
+.reliable-info-container {
+  background-color: rgba(0, 113, 194, 0.3);
+}
+.hotel-desc-highlights h3 {
+  font-size: 14px;
+}
+.hotel-desc-highlights p,
+.hotel-desc-highlights span,
+.reserve-btn,
+.reliable-info-container p {
+  font-size: 10px;
+}
+.reserve-btn {
+  background-color: var(--dark-blue-color);
+}
+.reliable-info-header {
+  color: var(--green-color);
+}
+.reliable-info-header svg {
+  fill: var(--green-color);
+}
+.category-container {
+  width: 30%;
+}
+.rating-number {
+  color: var(--white-color);
+  background-color: var(--dark-blue-color);
+  border-radius: 6px 6px 6px 0px;
+}
+.category-progress-rate {
+  background-color: rgba(107, 107, 107, 0.3);
+}
+.category-progress-value {
+  height: 10px;
+  background-color: var(--dark-blue-color);
+}

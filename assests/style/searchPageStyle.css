@@ -1,0 +1,159 @@
+.search-section {
+  width: 75%;
+}
+.search-side,
+.results-side-header-container,
+.results-side-nearby-beaches-container,
+.result-card-address,
+.result-card-desc,
+.wishlist-icon {
+  display: block;
+}
+.results-side-results-container {
+  padding: 35px 0px;
+  overflow-y: scroll;
+  height: 800px;
+}
+.result-card-content-left-rating-mobile,
+.result-card-content-right-mobile {
+  display: none;
+}
+.nearby-beaches-span {
+  color: var(--grey-color);
+}
+.nearby-beach-li {
+  position: relative;
+  border-bottom: 1px dashed black;
+}
+.nearby-beach-tooltip {
+  width: max-content;
+  position: absolute;
+  bottom: 150%;
+  padding: 15px;
+  color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  opacity: 0;
+}
+.nearby-beach-tooltip p,
+.nearby-beach-tooltip ul,
+.nearby-beach-tooltip span {
+  font-size: 10px;
+}
+.nearby-beach-tooltip ul {
+  text-align: start;
+  font-weight: lighter;
+  list-style-type: disc;
+}
+.nearby-beach-li:hover .nearby-beach-tooltip {
+  opacity: 1;
+  bottom: 120%;
+}
+.result-card:first-child {
+  background-color: rgba(0, 113, 194, 0.15);
+  border-color: rgba(0, 113, 194, 0.35) !important;
+  box-shadow: 0 0 8px 0px var(--light-blue-color);
+}
+.hotel-image-container {
+  position: relative;
+  height: 150px;
+}
+.result-card-img-container {
+  height: 100%;
+  max-height: 145px;
+}
+.wishlist-icon {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.wishlist-icon-save {
+  position: absolute;
+  bottom: 200%;
+  right: 0px;
+  background-color: black;
+  color: var(--white-color);
+  opacity: 0;
+}
+.wishlist-icon svg {
+  fill: rgba(0, 0, 0, 0.2);
+  stroke: var(--white-color);
+  stroke-width: 10px !important;
+  transition: unset;
+}
+.wishlist-icon:hover svg {
+  fill: rgba(0, 0, 0, 0.5);
+}
+.wishlist-icon:hover .wishlist-icon-save {
+  bottom: 110%;
+  opacity: 1;
+}
+.result-card-heading {
+  color: var(--dark-blue-color);
+}
+.result-card-heading:hover {
+  color: var(--hover-color);
+}
+.rating-star {
+  fill: var(--yellow-color);
+}
+.result-card-address-link {
+  color: var(--light-blue-color);
+}
+.result-card-address-link:hover {
+  color: var(--light-blue-color);
+}
+.result-card-content-right-rating-link,
+.result-card-content-left-rating-link {
+  color: unset;
+}
+.result-card-content-right-rating-link:hover,
+.result-card-content-left-rating-link:hover {
+  color: unset;
+}
+.result-card-content-right-rating-link .rating-number,
+.result-card-content-left-rating-link .rating-number {
+  color: var(--white-color);
+  background-color: var(--dark-blue-color);
+  border-radius: 6px 6px 6px 0px;
+}
+.show-prices {
+  color: var(--white-color);
+  background-color: var(--light-blue-color);
+  font-size: 11px;
+}
+.show-prices:hover {
+  color: var(--white-color);
+  background-color: var(--dark-blue-color);
+}
+.result-card-content-left .result-card-heading {
+  font-size: 16px;
+}
+.result-card-content-left .result-card-address-link,
+.result-card-content-left .result-card-desc,
+.rating-grade h6,
+.rating-number,
+.reviews-number,
+.result-left-address {
+  font-size: 11px !important;
+}
+.result-card-desc,
+.result-left-address {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reviews-number {
+  color: var(--grey-color);
+}
+.result-card-content-right-rating-link {
+  font-size: 10px !important;
+}
+.result-card-content-right-mobile svg {
+  fill: var(--grey-color);
+}
+.result-left-address svg {
+  fill: var(--grey-color);
+}

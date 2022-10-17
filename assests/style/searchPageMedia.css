@@ -1,0 +1,48 @@
+@media (max-width: 1200px) {
+  .search-section {
+    width: 100%;
+  }
+  .results-side-results-container {
+    max-height: 400px;
+  }
+  .result-card {
+    max-height: 250px;
+  }
+  .hotel-image-container {
+    align-self: center;
+    height: max-content;
+    max-height: 145px;
+  }
+  .hotel-content-container {
+    align-self: center;
+  }
+  .search-side,
+  .results-side-header-container,
+  .results-side-nearby-beaches-container,
+  .result-card-content-right,
+  .result-card-address,
+  .result-card-desc,
+  .wishlist-icon {
+    display: none;
+  }
+  .results-side {
+    width: 100%;
+  }
+  .result-card-rating-stars,
+  .result-card-content-left-rating-mobile,
+  .result-card-content-right-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .result-card {
+    max-height: max-content;
+  }
+  .result-card-content-left .result-card-heading {
+    font-size: 10px;
+  }
+  .rating-grade h6 {
+    font-size: 9px !important;
+  }
+}
