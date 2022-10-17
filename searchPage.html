@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Welcome to BookingWebsite for hotels and airplanes trips Book at over 2,563,000 hotels online. No Reservation Fees. Great Rates! Choose From a Wide Range of Properties Which Booking.com Offers. Search Now!">
+        <title>Booking.com</title>
+        <link rel="shortcut icon" href="assets/images/firstPage/10108.ico">
+        <!-- Bootstrap  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/style/bootstrap.min.css" />
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/style/fontawesome.min.css" />
+        <link rel="stylesheet" href="assets/style/all.css" />
+        <!-- Swiper Carousel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- Local Style -->
+        <link rel="stylesheet" href="assets/style/sharedStyle.css">
+        <link rel="stylesheet" href="assets/style/indexStyle.css">
+        <link rel="stylesheet" href="assets/style/searchPageStyle.css">
+        <link rel="stylesheet" href="assets/style/indexMedia.css">
+        <link rel="stylesheet" href="assets/style/searchPageMedia.css">
+    </head>
+
+    <body>
+        <!-- main -->
+        <main class="w-100 m-0 px-2 py-4 ">
+            <section class="search-section m-auto px-0 py-1 ">
+                <!-- this h3 is necessary for W3C validator, and won't appear in page -->
+                <h3 class="d-none">Search Detials Section</h3>
+                <div class="row justify-content-between m-0 p-0">
+                    <!-- search side -->
+                    <aside class="search-side col-3 m-0 p-0"></aside>
+                    <!-- results side -->
+                    <aside class="results-side col-9 m-0 px-2 py-1 ">
+                        <div class="results-side-header-container m-0 p-0">
+                            <div class="row justify-content-between m-0 px-0 py-4 border-bottom border-2">
+                                <h3 class="search-results-title col m-0 p-0 fs-5 fw-bold ">
+                                    <span class="search-word">Hurghada</span> :
+                                    <span class="results-number" id="results-number">XXXXX</span>
+                                    properties found
+                                </h3>
+                                <div class="col-2 m-0 p-0 ">Google Map</div>
+                            </div>
+                        </div>
+                        <div class="results-side-nearby-beaches-container m-0 px-0 py-2">
+                            <span class="nearby-beaches-span text-capitalize fw-bold">nearby beaches:</span>
+                            <ul class="d-inline-block list-unstyled m-0 p-0">
+                                <li class="nearby-beach-li d-inline-block mx-3 my-0 fw-bold">Elysees Dream Beach
+                                    <div class="nearby-beach-tooltip rounded-3">
+                                        <p class="m-0 p-0">Elysees Dream Beach</p>
+                                        <ul>
+                                            <li>Swimming</li>
+                                            <li>Water Sports</li>
+                                            <li>Food & Drink</li>
+                                            <li>Surfing</li>
+                                            <li>Watching the Sunset</li>
+                                            <li>Seashell collecting</li>
+                                        </ul>
+                                        <span class="btn text-light border border-2 p-1 mt-2">golden sand</span>
+                                    </div>
+                                </li>
+                                <li class="nearby-beach-li d-inline-block mx-3 my-0 fw-bold">Old Vic Beach
+                                    <div class="nearby-beach-tooltip  rounded-3">
+                                        <p class="m-0 p-0">Old Vic Beach</p>
+                                        <ul>
+                                            <li>Swimming</li>
+                                            <li>Water Sports</li>
+                                            <li>Food & Drink</li>
+                                            <li>Surfing</li>
+                                            <li>Watching the Sunset</li>
+                                            <li>Seashell collecting</li>
+                                        </ul>
+                                        <span class="btn text-light border border-2 p-1 mt-2">golden sand</span>
+
+                                    </div>
+                                </li>
+                                <li class="nearby-beach-li d-inline-block mx-3 my-0 fw-bold">The Smokery Beach
+                                    <div class="nearby-beach-tooltip  rounded-3">
+                                        <p class="m-0 p-0">The Smokery Beach</p>
+                                        <ul>
+                                            <li>Swimming</li>
+                                            <li>Water Sports</li>
+                                            <li>Food & Drink</li>
+                                        </ul>
+                                        <span class="btn text-light border border-2 p-1 mt-2">golden sand</span>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="results-side-results-container m-0" id="results-side-results-container">
+                            <!-- <div class="result-card rounded-3 m-0 mb-3 p-0 ">
+                                <div class="row justify-content-between m-0 p-3 ">
+                                    <div class="hotel-image-container col-3 m-0 p-0">
+                                        <a href="#" class="hide-title text-decoration-none" title="result-card-img">
+                                            <div class="result-card-img-container w-100 overflow-hidden rounded-3">
+                                                <img src="assets/images/searchPage/10006.webp" class="w-100 rounded-3"
+                                                    alt="title">
+                                            </div>
+                                        </a>
+                                        <span class="wishlist-icon">
+                                            <svg viewBox="0 0 128 128" width="1.5em" height="1.5em">
+                                                <path
+                                                    d="M64 112a3.6 3.6 0 0 1-2-.5 138.8 138.8 0 0 1-44.2-38c-10-14.4-10.6-26-9.4-33.2a29 29 0 0 1 22.9-23.7c11.9-2.4 24 2.5 32.7 13a33.7 33.7 0 0 1 32.7-13 29 29 0 0 1 22.8 23.7c1.3 7.2.6 18.8-9.3 33.3-9.1 13.1-24 25.9-44.2 37.9a3.6 3.6 0 0 1-2 .5z">
+                                                </path>
+                                            </svg>
+                                            <p class="wishlist-icon-save text-capitalize m-0 p-2 rounded-3">save</p>
+                                        </span>
+                                    </div>
+                                    <div class="hotel-content-container col m-0 py-0 px-3">
+                                        <div class="row justify-content-between">
+                                            <div class="result-card-content-left col">
+                                                <a href="#" class="result-card-header hide-title text-decoration-none"
+                                                    title="result-card-header">
+                                                    <span
+                                                        class="result-card-heading text-capitalize fw-bold m-0 p-0">header
+                                                        blah
+                                                        blah</span>
+                                                </a>
+                                                <span class="result-card-rating-stars m-0 p-0">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="15" hight="15" class="rating-star">
+                                                        <path
+                                                            d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z">
+                                                        </path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="15" hight="15" class="rating-star">
+                                                        <path
+                                                            d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z">
+                                                        </path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="15" hight="15" class="rating-star">
+                                                        <path
+                                                            d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z">
+                                                        </path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="15" hight="15" class="rating-star">
+                                                        <path
+                                                            d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z">
+                                                        </path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="15" hight="15" class="rating-star">
+                                                        <path
+                                                            d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z">
+                                                        </path>
+                                                    </svg>
+
+                                                </span>
+                                                <div class="result-card-address m-0 p-0">
+                                                    <a href="#"
+                                                        class="result-card-address-link text-decoration-underline hide-title fw-bold"
+                                                        title="address">15,SalahElDin</a>
+                                                </div>
+                                                <div class="result-card-desc">
+                                                    Offering a private beach and a kite-surfing school, this
+                                                    Modern-style, all-inclusive resort provides air-conditioned
+                                                    rooms.Offering a private beach and a kite-surfing school, this
+                                                    Modern-style, all-inclusive resort provides air-conditioned
+                                                    rooms.
+                                                    Offering a private beach and a kite-surfing school, this
+                                                    Modern-style, all-inclusive resort provides air-conditioned
+                                                    rooms.
+                                                    Offering a private beach and a kite-surfing school, this
+                                                    Modern-style, all-inclusive resort provides air-conditioned
+                                                    rooms.
+                                                </div>
+                                                <div class="result-card-content-left-rating-mobile m-0">
+                                                    <a href="#"
+                                                        class="result-card-content-left-rating-link hide-title text-decoration-none"
+                                                        title="rating">
+                                                        <div class="result-card-rating m-0 p-0">
+                                                            <div class="d-inline-block rating-number m-0 p-1">8.5
+                                                            </div>
+                                                            <div class="d-inline-block rating-grade m-0 p-0">
+                                                                <h6 class="text-capitalize">very good</h6>
+                                                            </div>
+                                                            <span class="seperator text-capitalize">-</span>
+                                                            <span class="reviews-number text-capitalize">1.555
+                                                                reviews</span>
+                                                        </div>
+                                                        <span class="result-left-address">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                width="12" height="12">
+                                                                <path
+                                                                    d="M15 8.25a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm1.5 0a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zM12 1.5a6.75 6.75 0 0 1 6.75 6.75c0 2.537-3.537 9.406-6.75 14.25-3.214-4.844-6.75-11.713-6.75-14.25A6.75 6.75 0 0 1 12 1.5zM12 0a8.25 8.25 0 0 0-8.25 8.25c0 2.965 3.594 9.945 7 15.08a1.5 1.5 0 0 0 2.5 0c3.406-5.135 7-12.115 7-15.08A8.25 8.25 0 0 0 12 0z">
+                                                                </path>
+                                                            </svg>
+                                                            Al Ahyaa, Hurghada
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="result-card-content-right col-3 m-0 p-0 text-end">
+                                                <div class="result-card-content-right-rating mb-2">
+                                                    <a href="#"
+                                                        class="result-card-content-right-rating-link hide-title text-decoration-none"
+                                                        title="rating">
+                                                        <div class="result-card-rating text-end m-0 p-0">
+                                                            <div class="d-inline-block rating-grade m-0 me-1 p-0">
+                                                                <h6 class="text-capitalize">very good</h6>
+                                                            </div>
+                                                            <div class="d-inline-block rating-number m-0 p-1">8.5</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <a href="#"
+                                                    class="show-prices btn hide-title text-decoration-none text-capitalize"
+                                                    title="show prices">show prices</a>
+                                            </div>
+                                            <div
+                                                class="result-card-content-right-mobile col-3 m-0 p-0 text-end align-self-center">
+                                                <a href="#" title="go to details"
+                                                    class="details-anchor text-decoration-none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="35" height="50" fill="#000" data-rtl-flip="true">
+                                                        <path
+                                                            d="M9.45 6c.2 0 .39.078.53.22l5 5c.208.206.323.487.32.78a1.1 1.1 0 0 1-.32.78l-5 5a.75.75 0 0 1-1.06 0 .74.74 0 0 1 0-1.06L13.64 12 8.92 7.28a.74.74 0 0 1 0-1.06.73.73 0 0 1 .53-.22zm4.47 5.72zm0 .57z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class="w-100 m-0 p-0">
+            <section class="subscribe-section w-100 text-center ">
+                <h3 class="save-heading m-0 p-0 text-light text-capitalize fw-normal fs-5">save time, save money !</h3>
+                <p class="signUp-para m-0 p-0 ">Sign up and we'll send the best deals to you</p>
+                <div class="email-input-container w-50 m-auto my-3 p-0 text-center">
+                    <input type="email" name="userEmail" id="userEmail-input"
+                        class="userEmail-input m-0 p-2 text-capitalize w-50 fs-5" placeholder="your email">
+                    <button type="submit"
+                        class="subscribe-submit-btn m-0 p-2 w-25 fs-5 border-none text-capitalize">subscribe</button>
+                    <div class="sendme-app-link-container w-75 m-auto text-start">
+                        <label class="text-light">
+                            <input type="checkbox" name="sendme-app-link" id="sendme-app-link-checkbox"> Send me a link
+                            to get the FREE Booking.com app!
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="mid-footer-section w-100 m-0 p-0">
+                <div class="listProperty-container text-center text-capitalize p-4 border-bottom border-1">
+                    <a href="#" class="list-your-property border border-2 rounded-3 p-3 py-1"
+                        title="list-your-property">list
+                        your
+                        property</a>
+                </div>
+                <div class="desktop-nav text-center p-3 ">
+                    <div class="footer-nav text-decoration-underline fw-bold">
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                            title="mobile version">mobile
+                            version</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title" title="Your account">Your
+                            account</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                            title="make changes online to your booking">make changes online
+                            to your booking</a>
+                        <div class="customer-service-help-container d-inline-block text-decoration-underline">
+                            <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                id="customer-service-help" data-tooltip="" title="Customer Service">Customer
+                                Service
+                                Help</a>
+                        </div>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title" title="affiliate">become an
+                            affiliate</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                            title="for Business">booking.com for
+                            Business</a>
+                    </div>
+                </div>
+                <div class="mobile-nav text-center p-3 ">
+                    <div class="footer-nav text-decoration-underline fw-bold">
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                            title="desktop version">desktop
+                            version</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title" title="terms">terms &
+                            conditions</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title" title="work">how we work</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title" title="privacy">privacy &
+                            cookies</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title" title="MSA">MSA
+                            statement</a>
+                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title" title="about">about
+                            booking.com</a>
+                    </div>
+                    <p class="copyright-para mx-0 my-3 text-light">copyright © 1996–2022 Booking.com™. all rights
+                        reserved.</p>
+                    <p class="copyright-para m-0 mb-3 text-light">your reference ID is: <span class="refID-span"
+                            id="refID-span"></span></p>
+                    <div class="accordion" id="accordionSitemap">
+                        <div class="accordion-item">
+                            <a href="#collapseSitemap"
+                                class="sitemap accordion-header text-capitalize text-decoration-underline text-light"
+                                id="headingSitemap" data-bs-toggle="collapse" aria-expanded="true"
+                                aria-controls="collapseSitemap">sitemap</a>
+                            <div id="collapseSitemap" class="accordion-collapse collapse p-0"
+                                aria-labelledby="headingSitemap" data-bs-parent="#accordionSitemap">
+                                <div class="accordion-body p-2">
+                                    <div class="sitemap-nav text-decoration-underline">
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title">Discover
+                                            Destinations</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Directory">Country Directory</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Hotels">Hotels</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Apartments">Apartments</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Resorts">Resorts</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Motels">Motels</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Vacation">Vacation Rentals</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Pet-friendly">Pet-friendly Hotels</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Spa">Spa
+                                            Hotels</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Luxury">Luxury
+                                            Hotels</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Reviews">Reviews</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Unpacked">Unpacked: Travel
+                                            articles</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="places">Unique
+                                            places to
+                                            stay</a>
+                                        <a href="#" class="footer-nav-link text-capitalize me-3 hide-title"
+                                            title="Discover">Discover monthly
+                                            stays</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-footer-section w-100 m-0 p-0 ">
+                <div class="w-75 m-auto row justify-content-between p-3">
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Countries">Countries</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Regions">Regions</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Cities">Cities</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Districts">Districts</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Airports">Airports</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Hotels">Hotels</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title" title="interest">Places
+                                    of
+                                    interest</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title" title="Homes">Homes</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Apartments">Apartments</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Resorts">Resorts</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Villas">Villas</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Hostels">Hostels</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title" title="B&Bs">B&Bs</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Guest houses">Guest
+                                    houses</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title" title="Unique">Unique
+                                    places to
+                                    stay</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="All destinations">All
+                                    destinations</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Discover">Discover</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Reviews">Reviews</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Discover monthly stays">Discover monthly
+                                    stays</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Unpacked: Travel articles">Unpacked: Travel
+                                    articles</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Seasonal and holiday deals">Seasonal and
+                                    holiday deals</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title" title="Car rental">Car
+                                    rental</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Flight finder">Flight
+                                    finder</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Restaurant reservations">Restaurant
+                                    reservations</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Booking.com for Travel Agents">Booking.com
+                                    for Travel Agents</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Coronavirus (COVID-19) FAQs">Coronavirus
+                                    (COVID-19) FAQs</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="About Booking.com">About
+                                    Booking.com</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Customer Service Help">Customer Service
+                                    Help</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Partner help">Partner
+                                    help</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Careers">Careers</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Sustainability">Sustainability</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Press center">Press
+                                    center</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Safety Resource Center">Safety Resource
+                                    Center</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Investor relations">Investor relations</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Terms & conditions">Terms &
+                                    conditions</a>
+                            </li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Partner dispute">Partner
+                                    dispute</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title" title="How We Work">How
+                                    We
+                                    Work</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Privacy & cookie statement">Privacy &
+                                    cookie statement</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="MSA statement">MSA
+                                    statement</a></li>
+                            <li><a href="#" class="bottom-footer-nav text-capitalize hide-title"
+                                    title="Corporate contact">Corporate contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-75 m-auto p-3 text-center">
+                    <a href="#" class="extranet-login text-capitalize fw-bold hide-title"
+                        title="extranet-login">extranet
+                        login</a>
+                    <p class="copyright-para mx-0 my-3">copyright © 1996–2022 Booking.com™. all rights
+                        reserved.</p>
+                    <p class="booking-para mx-0 my-3">Booking.com is part of Booking Holdings Inc., the world leader
+                        in online travel and related services.</p>
+                    <img src="assets/images/firstPage/10022.png" class="mx-4" alt="booking.com">
+                    <img src="assets/images/firstPage/10023.png" class="mx-4" alt="priceline.com">
+                    <img src="assets/images/firstPage/10024.png" class="mx-4" alt="kayak">
+                    <img src="assets/images/firstPage/10025.png" class="mx-4" alt="agada">
+                    <img src="assets/images/firstPage/10026.png" class="mx-4" alt="rentalcars.com">
+                    <img src="assets/images/firstPage/10027.png" class="mx-4" alt="opentable">
+                </div>
+            </section>
+        </footer>
+        <!-- Bootstrap -->
+        <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+        <!-- <script src="assets/js/bootstrap.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!-- Swiper Carousel -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script type="module" src="assets/js/sharedScript.js"></script>
+        <script type="module" src="assets/js/indexScript.js"></script>
+        <script type="module" src="assets/js/searchPageScript.js"></script>
+        <!-- tooltips  -->
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+    </body>
+
+</html>
