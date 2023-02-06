@@ -1,0 +1,40 @@
+@media (max-width: 1440px) {
+  .hotel-main-imgs-left div {
+    max-height: 261px;
+    height: unset;
+  }
+}
+@media (max-width: 1200px) {
+  .hotel-search-gallery-section {
+    width: 100% !important;
+  }
+  .gallery-side {
+    width: 100% !important;
+  }
+  .hotel-imgs,
+  .search-side {
+    display: none;
+  }
+  .hotel-imgs-mob {
+    display: block;
+  }
+  .hotel-search-details-section,
+  .hotel-reviews-section {
+    width: 100%;
+  }
+  .category-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .options-1 {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .options-2 {
+    grid-template-columns: auto auto;
+  }
+}
